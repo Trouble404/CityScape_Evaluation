@@ -5,6 +5,11 @@ This script based on the panopticapi for coco
 
 * PQ (panoptic segmentation) 、SQ ( segmentation quality)、RQ (recognition quality)
 
+![image](https://raw.githubusercontent.com/Trouble404/CityScape_Evaluation/master/readme_pic/equation.png)
+
+RQ是检测中应用广泛的 F1 score，用来计算全景分割中每个实例物体识别的准确性，SQ 表示匹配后的预测 segment与标注 segment 的 mIOU，如下图所示，只有当预测 segment 与标注 segment 的 IOU 严格大于 0.5 时，认为两个 segment 是匹配的。
+
+![image](https://raw.githubusercontent.com/Trouble404/CityScape_Evaluation/master/readme_pic/example.png)
 
 
 ## Test Data Preparation
